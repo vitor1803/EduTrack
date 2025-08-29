@@ -1,0 +1,45 @@
+# Build & Bin
+bin/
+obj/
+**/bin/
+**/obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+*.vscode/
+api.http
+api.sln
+
+# Logs
+*.log
+*.tlog/
+
+# EF Migrations files (se quiser ignorar arquivos gerados localmente)
+# Migrations/
+# Nota: normalmente você quer versionar migrations, então descomente se necessário
+
+# Packages
+*.nupkg
+*.snupkg
+*.nuspec
+
+# Runtime files
+*.dll
+*.exe
+*.pdb
+*.cache
+*.db
+
+# Configuration sensitive files
+appsettings.*.json
+
+# OS files
+.DS_Store
+Thumbs.db
