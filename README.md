@@ -1,6 +1,6 @@
 # Course Enrollment Management API
 
-A **Course Enrollment Management API** built with **.NET 9, Entity Framework Core, and Identity**.  
+A **Course Enrollment Management API** built with **.NET 8, Entity Framework Core, and Identity**.  
 This project provides a backend service to manage **courses, students, and enrollments**, including authentication and authorization with **JWT tokens**.
 
 ---
@@ -18,7 +18,7 @@ This project provides a backend service to manage **courses, students, and enrol
 
 ## 🛠️ Technologies
 
-- **.NET 9** (ASP.NET Core Web API)  
+- **.NET 8** (ASP.NET Core Web API)  
 - **Entity Framework Core**  
 - **ASP.NET Identity + JWT Authentication**  
 - **SQL Server**  
@@ -30,7 +30,7 @@ This project provides a backend service to manage **courses, students, and enrol
 
 ### Prerequisites
 
-- [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)  
+- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)  
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)  
 - [Visual Studio 2022](https://visualstudio.microsoft.com/) or [VS Code](https://code.visualstudio.com/)  
 
@@ -141,8 +141,6 @@ api/
 ## 🏗️ Future Improvements
 
 - Add **unit tests** and **integration tests**  
-- Implement **refresh tokens** for JWT  
-- Add **pagination & filtering** for lists  
 - Improve **Swagger documentation** with examples  
 
 ---

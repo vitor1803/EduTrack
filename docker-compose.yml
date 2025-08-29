@@ -1,0 +1,35 @@
+version: '3.9'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver_test
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=MinhaSenhaForte!
+    ports:
+      - "1433:1433"
+    networks:
+      - api-network
+    volumes:
+      - sql_data:/var/opt/mssql
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api
+    ports:
+      - "5100:5100"
+    depends_on:
+      - sqlserver
+    networks:
+      - api-network
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=MinhaApiDB;User Id=sa;Password=MinhaSenhaForte!;TrustServerCertificate=True;
+
+networks:
+  api-network:
+
+volumes:
+  sql_data:
